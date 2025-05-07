@@ -32,7 +32,7 @@ class GiftServiceTest extends TestCase
         $service = new GiftService($repository, $scoring);
 
         // Act
-        $result = $service->suggestGifts(new GiftFilterDTO([]));
+        $result = $service->suggestGifts(new GiftFilterDTO(5,'ddd',['ddd'],['rrr'],150));
 
         // Assert
         $this->assertInstanceOf(Collection::class, $result);
