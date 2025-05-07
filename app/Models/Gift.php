@@ -8,6 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Gift extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'name',
+        'description',
+        'image',
+        'price',
+        'min_age',
+        'max_age',
+    ];
 
     public function categories()
     {

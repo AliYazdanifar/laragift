@@ -16,7 +16,7 @@
                     <h3 class="mb-0">فرم پیشنهاد</h3>
                 </div>
                 <div class="card-body">
-                    <form method="post" action="{{ route('suggestion.store') }}">
+                    <form method="post" action="{{ route('gift.store') }}">
                         @csrf
                         <!-- سن -->
                         <div class="mb-3">
